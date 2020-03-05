@@ -19,7 +19,7 @@ export default class MessageArea extends Component {
             <ol class="chat">
                 {props.messages.map(({name, text, from, time}) => {
                     if (from === 'visitor') {
-                        name = "You";
+                        name = "Usted";
                     }
                     return (
                         <li class={from}>
